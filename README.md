@@ -2,15 +2,15 @@
 
 **Overview**
 
-With the IMS setupCatalogManagedACB.xml workflow you can rapidly provision the catalog with [managed ACBs](https://www.ibm.com/support/knowledgecenter/en/SSEPH2_14.1.0/com.ibm.ims14.doc.sdg/ims_catalog_acb_mgmt.htm) using the IBM® z/OS® Management Facility (z/OSMF) 
+With the IMS catalog and managed ACBs workflow you can rapidly provision the catalog with [managed ACBs](https://www.ibm.com/support/knowledgecenter/en/SSEPH2_14.1.0/com.ibm.ims14.doc.sdg/ims_catalog_acb_mgmt.htm) using the IBM® z/OS® Management Facility (z/OSMF) 
 
 IMS can manage the runtime application control blocks (ACBs) for databases and program views for you. When IMS manages ACBs, IMS no longer requires DBD, PSB, and ACB libraries
 
-The IMS catalog workflow will provision the catalog to an existing IMS with these steps:
+The workflow will provision the catalog with managed ACBs to an existing IMS with these steps:
 * Create the catalog database.
-* Create the IMS DFSDFxxx proclib members to enable IMS catalog.
-* Establish the IMS active libraries.
+* Create the IMS DFSDFxxx proclib members to enable IMS catalog with managed ACBs.
 * Load the catalog database.
+* Build the IMS catalog directory data sets.
 The workflow will also optionally take an image copy of the HALDB catalog database.
 
 **Pre-requisites**
@@ -27,18 +27,18 @@ To run the workflow, you need the following authority:
 * Authority to ADD/DELETE APF authorizations
 
 **Package structure**  
-The IMS catalog workflows include the following files:
+The repository includes the following files:
 * setupCatalogManagedACB.xml
-  * This is the file that provisions the catalog. You should not modify the workflow XML.
+  * This is the file that provisions the catalog with managed ACBs. You should not modify the workflow XML.
 * workflow_variables.properties
-  * This properties file contains values from the variables referenced in the provision.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
+  * This properties file contains values from the variables referenced in the setupCatalogManagedACB.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
 **Installation**  
 * FTP the setupCatalogManagedACB.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
 * Examples: 
 ```Java
-chmod 755 setupCatalog.xml
+chmod 755 setupCatalogManagedACB.xml
 ```
 * Or if the file is in a folder with the name of workflows:
 ```Java 
