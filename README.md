@@ -2,7 +2,9 @@
 
 **Overview**
 
-With the IMS catalog  workflow you can rapidly provision the catalog using the IBM® z/OS® Management Facility (z/OSMF)
+With the IMS setupCatalogManagedACB.xml workflow you can rapidly provision the catalog with [managed ACBs](https://www.ibm.com/support/knowledgecenter/en/SSEPH2_14.1.0/com.ibm.ims14.doc.sdg/ims_catalog_acb_mgmt.htm) using the IBM® z/OS® Management Facility (z/OSMF) 
+
+IMS can manage the runtime application control blocks (ACBs) for databases and program views for you. When IMS manages ACBs, IMS no longer requires DBD, PSB, and ACB libraries
 
 The IMS catalog workflow will provision the catalog to an existing IMS with these steps:
 * Create the catalog database.
@@ -26,13 +28,13 @@ To run the workflow, you need the following authority:
 
 **Package structure**  
 The IMS catalog workflows include the following files:
-* setupCatalog.xml
+* setupCatalogManagedACB.xml
   * This is the file that provisions the catalog. You should not modify the workflow XML.
 * workflow_variables.properties
   * This properties file contains values from the variables referenced in the provision.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
 **Installation**  
-* FTP the provision.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
+* FTP the setupCatalogManagedACB.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
 * Examples: 
 ```Java
