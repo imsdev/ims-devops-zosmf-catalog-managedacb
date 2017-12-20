@@ -11,6 +11,7 @@ The workflow will provision the catalog with managed ACBs to an existing IMS wit
 * Create the IMS DFSDFxxx proclib members to enable IMS catalog with managed ACBs.
 * Load the catalog database.
 * Build the IMS catalog directory data sets.
+
 The workflow will also optionally take an image copy of the HALDB catalog database.
 
 **Pre-requisites**
