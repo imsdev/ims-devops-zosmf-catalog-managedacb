@@ -37,7 +37,7 @@ The repository includes the following files:
 **Installation**  
 * FTP the setupCatalogManagedACB.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
-* Examples: 
+* Example chmod commands: 
 ```Java
 chmod 755 setupCatalogManagedACB.xml
 ```
@@ -51,4 +51,5 @@ chmod -R 755 workflows
   * Typically this error comes from the file not existing at the path given, or the file exists, and chmod needs to be done on this file.
 
 **z/OSMF documentation**
-https://www.ibm.com/support/knowledgecenter/search/IBM%20z%2FOS%20Management%20Facility?scope=SSLTBW_2.2.0
+
+Visit the IBM Knowledge Center for more information on [IBM z/OS Management Facility](https://www.ibm.com/support/knowledgecenter/search/IBM%20z%2FOS%20Management%20Facility?scope=SSLTBW_2.2.0)
