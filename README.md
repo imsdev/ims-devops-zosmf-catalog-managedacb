@@ -56,8 +56,8 @@ chmod -R 755 workflows
     *	Workflow variable input file:
     *	System:
 1. Select "Next"
-1. Select "Finish"
 1. Select “Assign all steps to owner user ID” if you are going to run all of the workflow steps with the current user ID.
+1. Select "Finish"
 1. Right-click on the first action and select "Perform"
 
 For more information about running a workflow see [Create a workflow](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zosmfworkflows.help.doc/izuWFhpCreateWorkflowDialog.html)
