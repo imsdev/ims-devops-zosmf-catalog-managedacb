@@ -35,7 +35,7 @@ The repository includes the following files:
   * This properties file contains values from the variables referenced in the setupCatalogManagedACB.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
 **Installation**  
-* FTP the setupCatalogManagedACB.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
+* FTP the setupCatalogManagedACB.xml workflow and the workflow_variables.properties files to USS on the z/OS host in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
 * Example chmod commands: 
 ```Java
