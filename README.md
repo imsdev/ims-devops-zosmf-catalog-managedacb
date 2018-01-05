@@ -1,4 +1,4 @@
-# Setup IMS catalog with managed ACBs
+# Set up IMS catalog with managed ACBs
 
 ## Overview
 
