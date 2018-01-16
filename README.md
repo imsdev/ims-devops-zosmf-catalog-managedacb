@@ -4,7 +4,7 @@
 
 With the IMS catalog with managed ACBs workflow you can rapidly provision the catalog with [managed ACBs](https://www.ibm.com/support/knowledgecenter/en/SSEPH2_14.1.0/com.ibm.ims14.doc.sdg/ims_catalog_acb_mgmt.htm) using the IBM® z/OS® Management Facility (z/OSMF).
 
-IMS can manage the runtime application control blocks (ACBs) for databases and program views for you. When IMS manages ACBs, IMS no longer requires DBD, PSB, and ACB libraries
+IMS can manage the runtime application control blocks (ACBs) for databases and program views for you. When IMS manages ACBs, IMS no longer requires DBD, PSB, and ACB libraries.
 
 The workflow will provision the catalog with managed ACBs to an existing IMS with these steps:
 * Create the catalog database.
