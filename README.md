@@ -32,7 +32,7 @@ The repository includes the following files:
 * setUpCatalogManagedACB.xml
   * This workflow XML provisions the catalog with managed ACBs. Do not modify this file.
 * workflow_variables.properties
-  * This properties file contains values for the variables referenced in the setUpCatalogManagedACB.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file.
+  * This properties file contains values for the variables referenced in the setUpCatalogManagedACB.xml workflow. Edit the workflow_variables.properties file to specify your system specific information for the variables in the file.
 
 ## Installation 
 * Use FTP to transfer the setUpCatalogManagedACB.xml workflow and the workflow_variables.properties files to USS on the z/OS host in binary mode.
