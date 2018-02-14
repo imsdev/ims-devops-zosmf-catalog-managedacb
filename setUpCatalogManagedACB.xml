@@ -597,7 +597,7 @@ ALIAS=DFSC
 RETENTION=(DAYS=40,VERSIONS=55)
 ACBMGMT=ACBLIB
 *--------------------------------------------------------------------*
-* END OF MEMBER DFSDLOAD                                             *
+* END OF MEMBER DFSDFLOD                                             *
 *--------------------------------------------------------------------*
 /*
 //*</inlineTemplate>
